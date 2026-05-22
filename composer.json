@@ -1,0 +1,11 @@
+{
+    "name": "cef/klaxon",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "izniburak/router": "^1.5"
+    }
+}
