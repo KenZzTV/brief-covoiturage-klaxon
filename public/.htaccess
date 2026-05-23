@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Si le fichier ou le dossier demandé existe vraiment sur le disque (comme une image, du CSS), on le laisse passer directement
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     

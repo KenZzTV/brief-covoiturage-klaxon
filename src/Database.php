@@ -11,9 +11,8 @@ class Database {
     private static $db_name = 'touche_pas_au_klaxon';
     private static $username = 'root';
     private static $password = '';
-    private static $instance = null; // Contiendra la connexion unique
+    private static $instance = null;
 
-    // Pourquoi une fonction "getInstance" ? C'est le design pattern Singleton !
     public static function getInstance() {
         if (self::$instance === null) {
             try {

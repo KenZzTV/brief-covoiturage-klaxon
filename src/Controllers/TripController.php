@@ -59,7 +59,7 @@ class TripController {
             return;
         }
 
-        // CONTRÔLE 2 : Cohérence des dates (Brief : "on ne peut arriver avant de partir")
+        // CONTRÔLE 2 : Cohérence des dates
         if (strtotime($data['arrival_time']) <= strtotime($data['departure_time'])) {
             $error = "La date et heure d'arrivée doivent être postérieures à celles de départ !";
             $agencies = Agency::getAll();
@@ -78,7 +78,7 @@ class TripController {
     }
 
     /**
-     * Affiche le formulaire de modification d'un trajet (Auteur uniquement)
+     * Affiche le formulaire de modification d'un trajet
      * @param array|int $params
      */
     public function editForm($params) {
@@ -175,7 +175,7 @@ class TripController {
     }
 
     /**
-     * Traite la réservation d'une place (Gardé en bonus/sécurité si besoin)
+     * Traite la réservation d'une place
      */
     public function book($params) {
         if (!isset($_SESSION['user_id'])) {

@@ -9,7 +9,7 @@ class Trip {
 
     /**
      * Récupère la liste de tous les trajets futurs qui possèdent encore des places disponibles
-     * Triée par date de départ croissante (Brief 3.4)
+     * Triée par date de départ croissante
      * @return array Liste des trajets avec les détails des agences et du conducteur
      */
     public static function getAllWithDetails() {
@@ -46,7 +46,7 @@ class Trip {
     }
 
     /**
-     * Enregistre un nouveau trajet en base de données (Brief 3.6)
+     * Enregistre un nouveau trajet en base de données
      * @param array $data Données brutes du formulaire
      * @return bool True en cas de succès, false sinon
      */
@@ -67,7 +67,7 @@ class Trip {
     }
 
     /**
-     * Met à jour un trajet existant (Brief 3.5)
+     * Met à jour un trajet existant
      * @param array $data Données modifiées du trajet
      * @return bool True en cas de succès, false sinon
      */
@@ -95,7 +95,7 @@ class Trip {
     }
 
     /**
-     * Supprime un trajet de la base de données (Brief 3.5)
+     * Supprime un trajet de la base de données
      * @param int $id Identifiant du trajet à supprimer
      * @return bool True en cas de succès, false sinon
      */

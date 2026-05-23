@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\Trip;
 use App\Models\Agency;
-use App\Database; // Correction apportée ici pour cibler src/Database.php
+use App\Database;
 use PDO;
 
 class AdminController {
